@@ -1150,6 +1150,9 @@ p.icon-text {
 .icon-item-top {
   margin-top: 30px; }
 
+.icon-item-bottom {
+  margin-bottom: 30px; }
+
 .location-item h6 {
   margin-top: 20px;
   margin-bottom: 15px;
