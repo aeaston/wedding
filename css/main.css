@@ -626,6 +626,7 @@ span.lavan {
 
 .logo {
   display: inline-block;
+  padding: 2px 0;
   margin-bottom: 10px; }
 
 .logo hr {
@@ -704,6 +705,7 @@ span.lavan {
     transform: scale(1); } }
 .top-desription, .top-desription-visible {
   font-family: "Pacifico", sans-serif;
+  padding: 10px 0;
   margin: 2px 0;
   font-size: 20px;
   letter-spacing: 1px; }
@@ -775,10 +777,10 @@ span.lavan {
 
 /** navbar-theme-three **/
 .navbar-theme-three .navbar-nav > li > a {
-  padding: 0 3px 7px;
+  padding: 0 3px;
   margin: 0 12px;
-  margin-bottom: 27px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  line-height: 120px; }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background-color: transparent; }
@@ -812,7 +814,10 @@ span.lavan {
   display: none; }
 
 .navbar-theme-small .navbar-nav > li > a {
-  margin: 16px 12px 10px 12px !important; }
+  line-height: 56px; }
+
+.navbar-theme-small .logo-div {
+  text-align: left; }
 
 .dropdown span.caret {
   margin: 0; }

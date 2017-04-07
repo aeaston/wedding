@@ -225,11 +225,11 @@ span.pattern-swatches {
   background-color: $header-bg;
 }
 
+/** NAVIGATION **/
+
 .navbar-theme-one .top-desription {
   color: $header-color;
 }
-
-/** NAVIGATION **/
 
 .navbar-theme-one .navbar-nav > li > a {
   color: $header-color;
@@ -241,6 +241,10 @@ span.pattern-swatches {
 
 .navbar-theme-three .nav-bg {
   background-color: $transparent-bg;
+}
+
+.navbar-theme-three .top-desription {
+  color: $header-color;
 }
 
 .navbar-theme-three .navbar-nav > li > a {

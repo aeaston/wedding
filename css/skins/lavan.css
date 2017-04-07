@@ -159,10 +159,10 @@ span.pattern-swatches {
 .nav-bg {
   background-color: #f2f2f2; }
 
+/** NAVIGATION **/
 .navbar-theme-one .top-desription {
   color: #14202c; }
 
-/** NAVIGATION **/
 .navbar-theme-one .navbar-nav > li > a {
   color: #14202c; }
 
@@ -171,6 +171,9 @@ span.pattern-swatches {
 
 .navbar-theme-three .nav-bg {
   background-color: rgba(255, 255, 255, 0.84); }
+
+.navbar-theme-three .top-desription {
+  color: #14202c; }
 
 .navbar-theme-three .navbar-nav > li > a {
   color: #14202c; }
