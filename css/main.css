@@ -710,6 +710,9 @@ span.lavan {
   font-size: 20px;
   letter-spacing: 1px; }
 
+.header-padding {
+  padding-top: 50px; }
+
 /** NAVIGATION **/
 /** navbar-theme-one **/
 .navbar-nav {

@@ -17,7 +17,7 @@
 
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Pacifico" rel="stylesheet"> 
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -45,9 +45,7 @@
     <div id="preloader"></div>
     <div class="content">
       <!-- HEADER -->
-
       <header>
-        
         <nav class="navbar navbar-fixed-top navbar-theme navbar-theme-three animatefadeInDown">
           <div class="nav-bg">
             <div class="container">
@@ -94,604 +92,108 @@
             </div><!-- / container -->
           </div><!-- / nav-bg -->
         </nav>
-
-
       </header>
-
       <!-- / HEADER -->
 
+      <div class="container-fluid padding-none">
+        <div class="my-parallax height100vh decor-none js-rotating-bkgr">
+          <script type="text/javascript"> 
+            var rotatinBkgrNum = Math.ceil(Math.random() * 2);
+            var rotatingBkgrElems = document.getElementsByClassName('js-rotating-bkgr');
+            for (var i = 0; i < rotatingBkgrElems.length; i++) {
+              rotatingBkgrElems[i].style.backgroundImage = "url('images/hero" + rotatinBkgrNum + ".png')";
+            }
+          </script>
+          <div class="my-parallax-overlay text-center">
 
-    <!-- SLIDER -->
+            <div class="alignment clearfix">
+              <div class="v-align center-middle header-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
 
-    <div id="main-slider">
-      <div class="owl-carousel">
+                      <!-- DETAILS -->
+                      <div class="row">
+                        <div class="col-md-4 icon-item-border icon-item-top icon-item-bottom">
+                          <div class="icon-item">
+                            <i class="fa fa-map-marker theme-color" aria-hidden="true"></i>
+                            <p class="icon-title">The Place</p>
+                            <p class="icon-text">150 Wagner Rd<br>Sonoma, CA</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 icon-item-border icon-item-top icon-item-bottom">
+                          <div class="icon-item">
+                            <i class="fa fa-calendar theme-color" aria-hidden="true"></i>
+                            <p class="icon-title">The Date</p>
+                            <p class="icon-text">Saturday<br> May 19, 2018 </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 icon-item-top icon-item-bottom">
+                          <div class="icon-item">
+                            <i class="fa fa-clock-o theme-color" aria-hidden="true"></i>
+                            <p class="icon-title">The Time</p>
+                            <p class="icon-text">Ceremony begins 4:00 PM<br>Reception to Follow</p>
+                          </div>
+                        </div>
+                      </div>
 
-        <!-- CHANGE slide item -->
+                      <!-- COUNTDOWN -->
+                      <div id="getting-countdown" class="animatefadeIn"></div>
 
-        <div class="item" style="background-image: url(http://placehold.it/2000x1333);">
-          <div class="slider-inner">
-            <div class="slider-row">
-              <div class="slider-centered">
-                <div class="slider-content animatezoomIn">
-                  <h2>Rachel<i class="fa fa-heart-o"></i>Ross</h2>
-                  <div class="date-wrapper">
-                    <p class="date"> MAY - 31TH - 2017</p>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut iure nemo quo assumenda impedit, quos eveniet, dignissimos praesentium perspiciatis.</p>
-                  <div class="slider-btn">
-                    <a class="large-button" href="rsvp.html">R.S.V.P. now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- / CHANGE slide item -->
-
-        <!-- CHANGE slide item -->
-
-        <div class="item" style="background-image: url(http://placehold.it/2000x1333);">
-          <div class="slider-inner">
-            <div class="slider-row">
-              <div class="slider-centered">
-                <div class="slider-content animatezoomIn">
-                  <h2>Gift registry</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut iure nemo quo assumenda impedit, quos eveniet, dignissimos praesentium perspiciatis deleniti amet iste esse ipsam sequi repudiandae libero a quis!</p>
-                  <div class="slider-btn">
-                    <a class="large-button" href="gift-registry.html">Registry</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- / CHANGE slide item -->
-
-
-        <!-- CHANGE slide item -->
-  
-        <div class="item" style="background-image: url(http://placehold.it/2000x1333);">
-          <div class="slider-inner">
-            <div class="slider-row">
-              <div class="slider-centered">
-                <div class="slider-content animatezoomIn">
-                  <h2>Ceremony location</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ut iure nemo quo assumenda impedit, quos eveniet, dignissimos praesentium perspiciatis deleniti amet iste esse ipsam sequi repudiandae libero a quis!</p>
-                  <div class="slider-btn">
-                    <a class="large-button" href="location-page.html">Read more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- / CHANGE slide item -->
-
-      </div>
-    </div>
-
-    <!-- / SLIDER -->
-
-
-
-    <!--SETTING-->
-    <div id="options-setting"> 
-      <div id="setting-button-wrapper">
-        <a id="setting-button" href="#">
-          <div class="setting-icon">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-          </div>
-        </a>
-      </div>
-      <div>
-        <h6>WEDDING COLOR</h6>
-          <div style="position:relative">
-            <a href="#" id="vanilla"><span class="swatches vanilla">Vanilla</span></a>
-            <a href="#" id="chocolate"><span class="swatches chocolate">Chocolate</span></a>
-            <a href="#" id="cherry"><span class="swatches cherry">Cherry</span></a>
-            <a href="#" id="mint"><span class="swatches mint">Mint</span></a>
-            <a href="#" id="strawberries"><span class="swatches strawberries">Strawberries</span></a>
-            <a href="#" id="lavan"><span class="swatches lavan">Lavender</span></a>
-          </div>
-      </div>
-      <div>
-        <h6>PATTERN</h6>
-          <div style="position:relative;">
-            <a href="#" id="pattern-1"><span class="pattern-swatches pattern-1">Pattern 1</span></a>
-            <a href="#" id="pattern-2"><span class="pattern-swatches pattern-2">Pattern 2</span></a>
-            <a href="#" id="pattern-3"><span class="pattern-swatches pattern-3">Pattern 3</span></a>
-            <a href="#" id="pattern-none"><span class="pattern-swatches pattern-none">None</span></a>
-          </div>
-      </div>
-    </div>        
-    <!--/ SETTING-->
-
-
-    <!-- PAGE CONTENT -->
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="page-head-title text-center animatefadeInUp">
-
-            <!-- CHANGE page title -->
-
-            <h1>We are Getting Married</h1>
-
-            <!-- / CHANGE page title -->
-
-            <div class="spacer">
-              <hr>
-              <i class="fa fa-heart-o grey-icon"></i>
-              <i class="fa fa-heart solid-icon"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-offset-1 col-md-5">
-          <div class="person-item">
-
-            <div class="person-image hovereffect rounded animatefadeIn">
-              
-              <!-- CHANGE page image -->
-
-              <img class="img-responsive" src="http://placehold.it/600x600" alt="Bride">
-
-              <!-- / CHANGE page image -->
-
-              <div class="overlay">
-                <div class="alignment">
-                  <div class="v-align center-middle">
-                    <a class="info large-button" href="bride-page.html">About bride</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- CHANGE page content -->
+            <div class="bottom-parallax page-icons-center">
 
-            <h4>Jeniffer (Happy Bride)</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus ea mollitia ratione dolor ex! Beatae aut officia accusamus in id, facere, ea voluptate sunt eaque et magnam, quia impedit.</p>
-              
-              <div class="page-icons-center">
+              <!-- SOCIAL SHARING
               <ul>
                 <li>
                   <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
+                    <div class="sharp-icon small-icon">
                       <i class="fa fa-facebook" aria-hidden="true"></i>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
+                    <div class="sharp-icon small-icon">
                       <i class="fa fa fa-twitter" aria-hidden="true"></i>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
+                    <div class="sharp-icon small-icon">
                       <i class="fa fa-instagram" aria-hidden="true"></i>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
+                    <div class="sharp-icon small-icon">
                       <i class="fa fa-dribbble" aria-hidden="true"></i>
                     </div>
                   </a>
                 </li>
               </ul>
-            </div>
+              -->
 
-            <!-- / CHANGE page content -->
-
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="person-item">
-
-            <div class="person-image hovereffect rounded animatefadeIn">
-              
-              <!-- CHANGE page image -->
-
-              <img class="img-responsive" src="http://placehold.it/600x600" alt="Groom">
-
-              <!-- / CHANGE page image -->
-
-              <div class="overlay">
-                <div class="alignment">
-                  <div class="v-align center-middle">
-                    <a class="info large-button" href="groom-page.html">About groom</a>
-                  </div>
-                </div>
+              <!-- COPYRIGHT -->
+              <div class="text-center">
+                <p>© 2017 ALL RIGHTS RESERVED</p>
               </div>
+
             </div>
-            
-            <!-- CHANGE page content -->
-
-            <h4>Ross (Proud Groom)</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus ea mollitia ratione dolor ex! Beatae aut officia accusamus in id, facere, ea voluptate sunt eaque et magnam, quia impedit.</p>
-            
-            <div class="page-icons-center">
-              <ul>
-                <li>
-                  <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
-                      <i class="fa fa fa-twitter" aria-hidden="true"></i>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <div class="outline-icon small-icon">
-                      <i class="fa fa-dribbble" aria-hidden="true"></i>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- / CHANGE page content -->
-
 
           </div>
-
-        
-        </div>
-      </div><!-- /row -->
-
-    </div> <!-- /container -->
-
-
-    <div class="container-fluid padding-none">
-        
-      <!-- CHANGE countdown block -->
-
-      <div class="my-parallax height400" style="background-image: url('http://placehold.it/2000x430')">
-
-        <div class="my-parallax-overlay text-center">
-          <div class="alignment clearfix">
-            <div class="v-align center-middle">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-offset-2 col-md-8">
-                    <h1>Don't Forget It!</h1>
-              
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi mollitia dolorem recusandae ipsam doloremque magni placeat hic, vel aperiam quos! Perferendis fuga facilis, ea iusto quis recusandae optio dolorem aut.</p>
-                    <div id="getting-countdown" class="animatefadeIn"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-
         </div>
       </div>
 
-      <!-- / CHANGE countdown block -->
-
-     
-
-    </div>  <!-- / container-fluid -->
-
-    <div class="margin-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-head-title text-center animatefadeInUp">
-              
-              <!-- CHANGE page title -->
-
-              <h1>Our love story</h1>
-
-              <!-- / CHANGE page title -->
-
-              <div class="spacer">
-                <hr>
-                <i class="fa fa-heart-o grey-icon"></i>
-                <i class="fa fa-heart solid-icon"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-5">
-
-            <div class="person-image animatefadeIn">
-
-              <!-- CHANGE page image -->
-
-              <img src="http://placehold.it/600x400" alt="Image date">
-
-              <!-- / CHANGE page image -->
-
-            </div>
-          </div>
-
-          <div class="col-md-7">
-
-            <!-- CHANGE page content -->
-
-            <h4>Our first date</h4>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus ea mollitia ratione dolor ex! Beatae aut officia accusamus in id, facere, ea voluptate sunt eaque et magnam, quia impedit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus ea mollitia ratione dolor ex! Beatae aut officia accusamus in id, facere, ea voluptate sunt eaque et magnam, quia impedit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, doloribus ea mollitia ratione dolor ex! Beatae aut officia accusamus in id, facere, ea voluptate sunt eaque et magnam, quia impedit.</p>
-            <hr>
-            <a class="medium-button" href="story-page.html">Read more</a>
-
-            <!-- CHANGE page content -->
-
-          </div>
-
-        </div><!-- /row -->
-      </div> <!-- /container -->
     </div>
-
-
-    <div class="container-fluid padding-none">
-        
-      <!-- CHANGE parallax block -->
-
-      <div class="my-parallax height400" style="background-image: url('http://placehold.it/2000x430')">
-        <div class="my-parallax-overlay text-center">
-          <div class="alignment clearfix">
-            <div class="v-align center-middle">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-offset-2 col-md-8">
-
-                    <h1>Are you attending?</h1>
-                    <p>Tell us if you're coming</p>
-                    <a class="large-button" href="rsvp.html">I am attending!</a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- / CHANGE parallax block -->
-      
-    </div>
-
-
-
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="page-head-title text-center animatefadeInUp">
-
-            <!-- CHANGE page title -->
-
-            <h1>The wedding event</h1>
-
-            <!-- / CHANGE page title -->
-
-            <div class="spacer">
-              <hr>
-              <i class="fa fa-heart-o grey-icon"></i>
-              <i class="fa fa-heart solid-icon"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-            <div class="row">
-        <div class="col-md-3">
-          <div class="location-item">
-
-            <!-- CHANGE location content -->
-            <div class="text-center">
-              <img class="animatefadeIn" src="http://placehold.it/600x400" alt="location">
-              <h6>Reseption</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam qui, accusamus. Itaque, praesentium facilis eius explicabo molestias, debitis fugit quos!</p>
-              <a class="medium-button" href="location-page.html">Read more</a>
-            </div>
-            
-
-            <!-- / CHANGE location content -->
-
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="location-item">
-
-            <!-- CHANGE location content -->
-            <div class="text-center">
-              <img class="animatefadeIn" src="http://placehold.it/600x400" alt="location">
-              <h6>Ceremony location</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam qui, accusamus. Itaque, praesentium facilis eius explicabo molestias, debitis fugit quos!</p>
-              <a class="medium-button" href="location-page.html">Read more</a>
-            </div>
-
-            <!-- / CHANGE location content -->
-
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="location-item">
-
-            <!-- CHANGE location content -->
-            <div class="text-center">
-              <img class="animatefadeIn" src="http://placehold.it/600x400" alt="location">
-              <h6>Gift registry</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam qui, accusamus. Itaque, praesentium facilis eius explicabo molestias, debitis fugit quos! </p>
-            
-              <a class="medium-button" href="location-page.html">Read more</a>
-            </div>
-
-            <!-- / CHANGE location content -->
-
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="location-item">
-
-            <!-- CHANGE location content -->
-            <div class="text-center">
-              <img class="animatefadeIn" src="http://placehold.it/600x400" alt="location">
-
-              <h6>Wedding party</h6>
-              
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam qui, accusamus. Itaque, praesentium facilis eius explicabo molestias, debitis fugit quos!</p>
-            
-              <a class="medium-button" href="location-page.html">Read more</a>
-            </div>
-
-            <!-- / CHANGE location content -->
-
-          </div>
-        </div>
-
-
-      </div><!-- /row -->
-    </div> <!-- /container -->
-
-    
-
-
-
-
-    <!-- / PAGE CONTENT -->
-
-    
-    <!-- FOOTER -->
-
-    <!-- CHANGE footer background -->
-
-    <footer class="top footer-background-cover text-center" style="background-image: url('http://placehold.it/2000x430');">
-
-    <!-- / CHANGE footer background -->
-
-      <div class="footer-background-overlay">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="footer-top-content animatezoomIn">
-
-                <!-- CHANGE footer title -->
-
-                <h3>Rachel & Ross</h3>
-
-                <!-- / CHANGE footer title -->
-
-                <div class="spacer">
-                  <hr>
-                  <i class="fa fa-heart-o grey-icon"></i>
-                  <i class="fa fa-heart solid-icon"></i>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <footer class="bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 text-left">
-            
-            <!-- CHANGE footer content -->
-
-            <p>© 2017 All Rights Reserved by PotokProektov</p>
-
-            <!-- / CHANGE footer content -->
-
-          </div>
-          <div class="col-md-6 col-sm-6 text-right">
-            <ul>
-
-              <!-- CHANGE footer icons -->
-
-              <li>
-                <a href="#" target="_blank">
-                  <div class="outline-icon small-icon">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <div class="outline-icon small-icon">
-                    <i class="fa fa fa-twitter" aria-hidden="true"></i>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <div class="outline-icon small-icon">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <div class="outline-icon small-icon">
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                  </div>
-                </a>
-              </li>
-
-              <!-- / CHANGE footer icons -->
-
-            </ul>
-          </div>
-        </div>
-      </div>      
-    </footer>
-
-    <!-- / FOOTER -->
-
-    <!-- SCROLL UP -->
-
-    <a href="#" class="scrollup">
-      <div class="outline-icon big-icon">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-      </div>
-    </a>
-
-    <!-- / SCROLL UP -->
-
-
-
-
-      
-  </div>
-   <!-- / CONTENT -->
-
-
-
+    <!-- / CONTENT -->
 
     <!-- JavaScript
     ================================================== -->

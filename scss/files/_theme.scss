@@ -38,7 +38,7 @@
 
 .logo i {
   font-size: 42px;
-      -webkit-animation: pulseicon 1s linear infinite;
+  -webkit-animation: pulseicon 1s linear infinite;
   -moz-animation: pulseicon 1s linear infinite;
   -ms-animation: pulseicon 1s linear infinite;
   animation: pulseicon 1s linear infinite;
@@ -139,6 +139,10 @@
   margin: 2px 0;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.header-padding {
+  padding-top: 50px;
 }
 
 /** NAVIGATION **/
