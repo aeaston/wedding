@@ -232,6 +232,14 @@
   line-height: 120px;
 }
 
+.navbar-theme-three .navbar-nav > li > a.selected {
+  color: grey;
+}
+
+.navbar-theme-three .navbar-nav > li > a.selected:hover {
+  color: grey;
+}
+
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background-color: transparent;
 }
