@@ -1500,12 +1500,13 @@ table#wp-calendar tfoot {
 
   .navbar-nav > li {
     float: none;
-    margin: 20px 0 0; }
+    margin: 20px 0; }
 
-  .navbar-nav > li > a {
+  .navbar-theme-three .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 1px !important; }
+    margin-bottom: 1px !important;
+    line-height: 22px; }
 
   .theme-dropdown {
     margin-bottom: 8px; }
