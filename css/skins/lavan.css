@@ -315,4 +315,8 @@ table#wp-calendar tbody a {
   color: #fff;
   background-color: #7b5da5; }
 
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary, .timeline-left .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+  color: #fff;
+  background-color: #7b5da5; }
+
 /*# sourceMappingURL=lavan.css.map */

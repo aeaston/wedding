@@ -23,7 +23,7 @@ $('#preloader').delay(500).fadeOut('slow');
 //================================================================
 
 $(function(){
- var shrinkHeader = 300;
+ var shrinkHeader = 120;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
     if ( scroll >= shrinkHeader ) {

@@ -35,6 +35,14 @@ a, a:hover {
   //margin: 20px 0;
 }
 
+.padded-top {
+  padding-top: 15px;
+}
+
+.padded-bottom {
+  padding-bottom: 15px;
+}
+
 /** ELEMENTS **/
 
 .page-head {
@@ -48,6 +56,10 @@ a, a:hover {
 
 .page-head-title i {
   font-size: 18px;
+}
+
+.page-top {
+  padding-top: 121px;
 }
 
 .divader {
@@ -593,4 +605,30 @@ span.strawberries {
 
 span.lavan {
   background-color:#7b5da5;
+}
+
+/* HEROES */
+
+.hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.hero-small {
+  height: 400px;
+
+  .hero-small-overlay-text {
+    color: #fff;
+    font-size: 50px;
+    line-height: 400px;
+    font-family: $header-font-family;
+    letter-spacing: 2px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
 }
