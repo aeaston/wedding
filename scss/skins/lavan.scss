@@ -439,6 +439,8 @@ table#wp-calendar tbody a {
 .timeline-centered, .timeline-left {
   .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
     color: #fff;
-    background-color: $main-color;
+    -moz-box-shadow: 0 0 0 4px $main-color;
+    -webkit-box-shadow: 0 0 0 4px $main-color;
+    box-shadow: 0 0 0 4px $main-color;
   }
 }

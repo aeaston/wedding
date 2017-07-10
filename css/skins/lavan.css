@@ -317,6 +317,8 @@ table#wp-calendar tbody a {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary, .timeline-left .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
   color: #fff;
-  background-color: #7b5da5; }
+  -moz-box-shadow: 0 0 0 4px #7b5da5;
+  -webkit-box-shadow: 0 0 0 4px #7b5da5;
+  box-shadow: 0 0 0 4px #7b5da5; }
 
 /*# sourceMappingURL=lavan.css.map */
