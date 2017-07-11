@@ -1317,7 +1317,7 @@ footer.top .footer-top-content ul {
   font-size: 14px; }
 
 footer.bottom {
-  display: none;
+  visibility: hidden;
   padding: 10px 0 20px; }
 
 footer.bottom p {

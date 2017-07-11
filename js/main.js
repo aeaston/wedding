@@ -27,8 +27,8 @@ if(footerOffset > 0) {
   var curPad = (footer.innerHeight() - footer.height())/2;
   var newPad = curPad + footerOffset;
   footer.css('padding-top', newPad + 'px');
-  footer.show();
 };
+footer.css('visibility', 'visible');
 
 // 1.NAVIGATION
 //================================================================
