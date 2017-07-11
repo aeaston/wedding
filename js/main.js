@@ -1,15 +1,15 @@
 'use strict';
 
-/*---------------------- 
+/*----------------------
   JS Guide
 ------------------------
- 
+
  1. NAVIGATION
  2. SLIDER
  3. ANIMATION
  4. COUNTDOWN
  5. SETTINGS
- 6. SCROLL TOP 
+ 6. SCROLL TOP
  7. FORM VALIDATE
  8. IMAGE POPUP
  9. SCROLL ANIMATE
@@ -18,6 +18,17 @@
 $(document).ready(function() {
 
 $('#preloader').delay(500).fadeOut('slow');
+
+// 0.FOOTER
+//================================================================
+var footer = $('footer.bottom');
+var footerOffset = $(window).height() - footer.offset().top - footer.innerHeight();
+if(footerOffset > 0) {
+  var curPad = (footer.innerHeight() - footer.height())/2;
+  var newPad = curPad + footerOffset;
+  footer.css('padding-top', newPad + 'px');
+  footer.show();
+};
 
 // 1.NAVIGATION
 //================================================================
@@ -38,7 +49,7 @@ $(function(){
   }
 });
 
-$(function(){ 
+$(function(){
      var navMain = $("#landing-navbar-collapse");
      navMain.on("click", "a", null, function () {
         navMain.collapse('hide');
@@ -154,7 +165,7 @@ $(".animatezoomIn").animated("zoomIn","zoomIn");
 
   var current_color = "lavan";
   var current_navbar = "white";
-   
+
   $(document).on('click', '#vanilla',  function(){
     $('link[rel*=skin]').remove();
     $('head').append('<link rel="stylesheet skin" href="css/skins/vanilla.css" type="text/css" />');
@@ -165,7 +176,7 @@ $(".animatezoomIn").animated("zoomIn","zoomIn");
     $('link[rel*=skin]').remove();
     $('head').append('<link rel="stylesheet skin" href="css/skins/chocolate.css" type="text/css" />');
     current_color = "chocolate";
-  }); 
+  });
 
   $(document).on('click', '#cherry',  function(){
     $('link[rel*=skin]').remove();
@@ -199,37 +210,37 @@ $(".animatezoomIn").animated("zoomIn","zoomIn");
     $("#pattern-2 span").removeClass("active");
     $("#pattern-3 span").removeClass("active");
     $("#pattern-none span").removeClass("active");
-    
+
     $('link[rel*=pattern]').remove();
     $('head').append('<link rel="stylesheet pattern" href="css/skins/pattern-1.css" type="text/css" />');
   });
-  
+
   $(document).on('click', '#pattern-2',  function(){
     $("#pattern-1 span").removeClass("active");
     $("#pattern-2 span").addClass("active");
     $("#pattern-3 span").removeClass("active");
     $("#pattern-none span").removeClass("active");
-    
+
     $('link[rel*=pattern]').remove();
     $('head').append('<link rel="stylesheet pattern" href="css/skins/pattern-2.css" type="text/css" />');
   });
-  
+
   $(document).on('click', '#pattern-3',  function(){
     $("#pattern-1 span").removeClass("active");
     $("#pattern-2 span").removeClass("active");
     $("#pattern-3 span").addClass("active");
     $("#pattern-none span").removeClass("active");
-    
+
     $('link[rel*=pattern]').remove();
     $('head').append('<link rel="stylesheet pattern" href="css/skins/pattern-3.css" type="text/css" />');
   });
-  
+
   $(document).on('click', '#pattern-none',  function(){
     $("#pattern-1 span").removeClass("active");
     $("#pattern-2 span").removeClass("active");
     $("#pattern-3 span").removeClass("active");
     $("#pattern-none span").addClass("active");
-    
+
     $('link[rel*=pattern]').remove();
   });
 
@@ -269,18 +280,18 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault();
        // get values from FORM
-      var name    = $("#formName").val();  
-      var email   = $("#formEmail").val(); 
-      var phone   = $("#formPhone").val(); 
+      var name    = $("#formName").val();
+      var email   = $("#formEmail").val();
+      var phone   = $("#formPhone").val();
       var message = $("#formMessage").val();
-           
+
       $.ajax({
         url: "./php/form.php",
         type: "POST",
         data: {name: name, phone: phone, email: email, message: message},
         cache: false,
         success: function() {
-          $('#contact-form').prepend( "<p class='text-center'>Thank You! Your message has been sent.</p><br>" );             
+          $('#contact-form').prepend( "<p class='text-center'>Thank You! Your message has been sent.</p><br>" );
           //clear all fields
           $('#contactForm').trigger("reset");
         },
@@ -292,7 +303,7 @@ $(function() {
     }
   });
 });
-   
+
 // 8. IMAGE POPUP
 //================================================================
 
@@ -319,11 +330,11 @@ function scrollToDiv(element,navheight){
     $('body, html').animate({scrollTop: totalScroll}, 1500);
 }
 
-$('.scroll-nav a').click(function(e) { 
-  e.preventDefault(); 
+$('.scroll-nav a').click(function(e) {
+  e.preventDefault();
     var el = $(this).attr('href');
     var elWrapped = $(el);
-    scrollToDiv(elWrapped,0);    
+    scrollToDiv(elWrapped,0);
 });
 
 $('.section').waypoint(function(direction) {
