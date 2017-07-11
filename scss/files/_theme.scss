@@ -859,12 +859,13 @@ footer.top .footer-top-content ul {
 }
 
 footer.bottom {
-  padding: 20px 0;
+  display: none;
+  padding: 10px 0 20px;
 }
 
 footer.bottom p {
-  line-height: 2.8;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 20px;
   margin: 0;
   font-weight: 600;
 }
