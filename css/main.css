@@ -134,10 +134,10 @@ a, a:hover {
   border: 1px solid #ddd; }
 
 .padded-top {
-  padding-top: 15px; }
+  padding-top: 30px; }
 
 .padded-bottom {
-  padding-bottom: 15px; }
+  padding-bottom: 30px; }
 
 /** ELEMENTS **/
 .page-head {
@@ -328,6 +328,7 @@ button.large-button:hover, a.large-button:hover, input.large-button[type="submit
   margin: 20px 0; }
 
 .bottom-parallax .text-center p {
+  font-size: 20px;
   margin: 0; }
 
 /** ICONS **/
@@ -1316,11 +1317,12 @@ footer.top .footer-top-content ul {
   font-size: 14px; }
 
 footer.bottom {
-  padding: 20px 0; }
+  display: none;
+  padding: 10px 0 20px; }
 
 footer.bottom p {
-  line-height: 2.8;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 20px;
   margin: 0;
   font-weight: 600; }
 
@@ -1698,6 +1700,10 @@ img {
           left: 0;
           top: 10px;
           margin-left: -9px; }
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label.no-box, .timeline-left .timeline-entry .timeline-entry-inner .timeline-label.no-box {
+          background: inherit; }
+          .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label.no-box:after, .timeline-left .timeline-entry .timeline-entry-inner .timeline-label.no-box:after {
+            display: none; }
         .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2, .timeline-left .timeline-entry .timeline-entry-inner .timeline-label h2 {
           color: #737881;
           font-family: "Noto Sans",sans-serif;
