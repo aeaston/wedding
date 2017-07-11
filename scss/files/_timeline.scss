@@ -214,6 +214,14 @@ img {
           margin-left: -9px;
         }
 
+        &.no-box {
+          background: inherit;
+
+          &:after {
+            display: none;
+          }
+        }
+
         h2 {
           color: #737881;
           font-family: "Noto Sans",sans-serif;
