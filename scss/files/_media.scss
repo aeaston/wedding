@@ -147,10 +147,13 @@
     display: none;
   }
 
- .navbar-nav .open .dropdown-menu>li {
-  border: none;
+  .col-xs-12 {
+    width: 100%;
+  }
 
- }
+  .navbar-nav .open .dropdown-menu>li {
+    border: none;
+  }
 
   .navbar-nav .open .dropdown-menu>li>a {
     text-align: center;

@@ -1530,6 +1530,9 @@ table#wp-calendar tfoot {
   .logo-div {
     display: none; }
 
+  .col-xs-12 {
+    width: 100%; }
+
   .navbar-nav .open .dropdown-menu > li {
     border: none; }
 
