@@ -95,19 +95,12 @@
       </header>
       <!-- / HEADER -->
 
-      <div class="container-fluid padding-none">
-        <div class="my-parallax height100vh decor-none js-rotating-bkgr">
-          <script type="text/javascript"> 
-            var rotatinBkgrNum = Math.ceil(Math.random() * 2);
-            var rotatingBkgrElems = document.getElementsByClassName('js-rotating-bkgr');
-            for (var i = 0; i < rotatingBkgrElems.length; i++) {
-              rotatingBkgrElems[i].style.backgroundImage = "url('images/hero" + rotatinBkgrNum + ".jpg')";
-            }
-          </script>
+      <div class="container-fluid padding-none page-top">
+        <div class="my-parallax height100vh decor-none js-rotating-bkgr js-fullscreen-hero" style="background-attachment:scroll">
           <div class="my-parallax-overlay text-center">
 
             <div class="alignment clearfix">
-              <div class="v-align center-middle header-padding">
+              <div class="v-align center-middle">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-offset-2 col-md-8">
@@ -216,6 +209,16 @@
     <!-- Countdown -->
     <script src="js/libs/jquery.countdown.min.js"></script>
     <!-- Custom -->  
-    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var headerHeight = $('header .col-xs-12.col-sm-9.col-md-9').innerHeight() > 0 ? (
+        $('header .col-xs-12.col-sm-9.col-md-9').innerHeight() +
+        $('.navbar-fixed-top').outerHeight() - $('.navbar-fixed-top').innerHeight()
+      ) : $('.navbar-fixed-top').outerHeight();
+      var heroHeight = $(window).height() - headerHeight;
+      $('.js-fullscreen-hero').css('height', heroHeight + 'px');
+      var rotatinBkgrNum = Math.ceil(Math.random() * 2);
+      $('.js-rotating-bkgr').css('background-image', "url('images/hero" + rotatinBkgrNum + ".jpg')");
+    </script>
+<script src="js/main.js"></script>
   </body>
 </html>
