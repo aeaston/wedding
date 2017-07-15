@@ -608,26 +608,18 @@ span.lavan {
 .hero {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 60vh; }
   .hero .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.3); }
   .hero .hero-overlay-text {
     color: #fff;
     font-size: 50px;
     font-family: "Pacifico", sans-serif;
     letter-spacing: 2px;
     font-weight: normal;
-    letter-spacing: 3px; }
-
-.hero-small {
-  height: 400px; }
-  .hero-small .hero-overlay-text {
-    line-height: 400px; }
-
-.hero-large {
-  height: 80vh; }
-  .hero-large .hero-overlay-text {
-    line-height: 80vh; }
+    letter-spacing: 3px;
+    line-height: 60vh; }
 
 /** PROGRESS BAR **/
 #preloader {

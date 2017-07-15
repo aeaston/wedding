@@ -614,9 +614,10 @@ span.lavan {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 60vh;
 
   .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .hero-overlay-text {
@@ -626,21 +627,6 @@ span.lavan {
     letter-spacing: 2px;
     font-weight: normal;
     letter-spacing: 3px;
-  }
-}
-
-.hero-small {
-  height: 400px;
-
-  .hero-overlay-text {
-    line-height: 400px;
-  }
-}
-
-.hero-large {
-  height: 80vh;
-
-  .hero-overlay-text {
-    line-height: 80vh;
+    line-height: 60vh;
   }
 }
