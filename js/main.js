@@ -22,13 +22,15 @@ $('#preloader').delay(500).fadeOut('slow');
 // 0.FOOTER
 //================================================================
 var footer = $('footer.bottom');
-var footerOffset = $(window).height() - footer.offset().top - footer.innerHeight();
-if(footerOffset > 0) {
-  var curPad = (footer.innerHeight() - footer.height())/2;
-  var newPad = curPad + footerOffset;
-  footer.css('padding-top', newPad + 'px');
-};
-footer.css('visibility', 'visible');
+if (footer.length) {
+  var footerOffset = $(window).height() - footer.offset().top - footer.innerHeight();
+  if(footerOffset > 0) {
+    var curPad = (footer.innerHeight() - footer.height())/2;
+    var newPad = curPad + footerOffset;
+    footer.css('padding-top', newPad + 'px');
+  };
+  footer.css('visibility', 'visible');
+}
 
 // 1.NAVIGATION
 //================================================================
