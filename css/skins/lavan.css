@@ -87,10 +87,10 @@ button.large-button:hover, a.large-button:hover, input.large-button[type="submit
   color: #fff; }
 
 .my-parallax-overlay, .footer-background-overlay {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .bottom-border {
   border-bottom: 3px solid #7b5da5; }
@@ -109,7 +109,7 @@ button.large-button:hover, a.large-button:hover, input.large-button[type="submit
 /** COUNTDOWN **/
 .countdown-num span {
   border: 3px solid #7b5da5;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 /** SETTINGS **/
 .swatches {

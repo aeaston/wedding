@@ -96,7 +96,7 @@
       <!-- / HEADER -->
 
       <div class="container-fluid padding-none page-top">
-        <div class="my-parallax height100vh decor-none js-rotating-bkgr js-fullscreen-hero" style="background-attachment:scroll">
+        <div class="my-parallax height100vh decor-none js-fullscreen-hero" style="background-image:url('images/hero1.jpg'); background-attachment:scroll;">
           <div class="my-parallax-overlay text-center">
 
             <div class="alignment clearfix">
@@ -216,9 +216,7 @@
       ) : $('.navbar-fixed-top').outerHeight();
       var heroHeight = $(window).height() - headerHeight;
       $('.js-fullscreen-hero').css('height', heroHeight + 'px');
-      var rotatinBkgrNum = Math.ceil(Math.random() * 2);
-      $('.js-rotating-bkgr').css('background-image', "url('images/hero" + rotatinBkgrNum + ".jpg')");
     </script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

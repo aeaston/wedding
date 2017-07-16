@@ -1439,6 +1439,9 @@ table#wp-calendar tfoot {
     position: absolute;
     width: 100%; }
 
+  .phone-center-left {
+    background-position: center left; }
+
   .countdown-num {
     display: inline-block;
     margin: 0px 4px; }
