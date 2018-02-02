@@ -138,13 +138,7 @@ $(".animatezoomIn").animated("zoomIn","zoomIn");
 //================================================================
 
   $('#getting-countdown').countdown('2018/05/19 4:00 PM', function(event) {
-    if (event.offset.years >= 1) {
-      $(this).html(event.strftime('<div class="countdown-num"><span>%D</span><p>days</p></div>'));
-    } else if (event.offset.months >= 3) {
-      $(this).html(event.strftime('<div class="countdown-num"><span>%m</span><p>months</p></div><div class="countdown-num"><span>%n</span><p>days</p></div>'));
-    } else {
-      $(this).html(event.strftime('<div class="countdown-num"><span>%w</span><p>weeks</p></div><div class="countdown-num"><span>%d</span><p>days</p></div><div class="countdown-num"><span>%H</span><p>hours</p></div><div class="countdown-num"><span>%M</span><p>minutes</p></div>'));
-    }
+    $(this).html(event.strftime('<div class="countdown-num"><span>%D</span><p>days</p></div>'));
   });
 
 
