@@ -314,9 +314,30 @@
 
 /** RSVP **/
 
+.rsvp {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
 .form-group {
   display: block;
   font-weight: 400;
+
+  .multiselect {
+		margin-top: 10px;
+
+    input {
+      display: inline-block;
+      width: auto;
+    }
+
+    label {
+      display: block;
+      font-family: $base-font-family;
+      font-size: 14px;
+    }
+  }
 }
 
 .form-group .text-danger ul,
@@ -341,7 +362,7 @@
 }
 
 .form-group textarea {
-  min-height:215px;
+  min-height:350px;
 }
 
 span.color-element {
@@ -351,7 +372,7 @@ span.color-element {
 label.form-group {
   font-family: $header-font-family;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .button_block {

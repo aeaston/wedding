@@ -108,38 +108,63 @@
         <div class="page-content">
           <div class="container">
             <div class="row text-center">
-              <h6 style="padding: 0 10px">We'll be supporting online RSVPs here, but we're not quite ready just yet.<br>Check back soon!</h6>
+              <h6 style="padding: 0 10px">We're excited to have you and hope you can make it!<br>To let us know if you will be attending, please fill out once per guest.</h6>
             </div>
           </div>
-        </div>
-        <!-- R.S.V.P.
-        <div class="page-content">
+          <!-- R.S.V.P. -->
           <div class="container">
             <div class="row">
               <div class="section-body clearfix">
-                <div class="form">
+                <div class="form rsvp">
 
                   <form id="contact-form" method="POST">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="col-xs-12 col-sm-8 col-md-8">
                       <label for="formName" class="form-group">
-                        <span class="color-element">*</span>Your Name<span class="help-block"></span>
-                        <input type="text" id="formName" name="name" placeholder="Your Name" data-validation-required-message="Name is required and must be a string." />
+                        Your name<span class="help-block">as it appears on the invitation, without the title</span>
+                        <input type="text" id="formName" name="name" placeholder="Stephanie Enrile" data-validation-required-message="Name is required and must be a string." />
                       </label>
                       
                       <label for="formEmail" class="form-group">
-                        <span class="color-element">*</span>Your E-mail<span class="help-block"></span>
-                        <input type="email" id="formEmail" name="email" placeholder="Your E-mail" data-validation-required-message="An email address is required." data-validation-email-message="Не корректно введен email" />
+                        Your email<span class="help-block"></span>
+                        <input type="email" id="formName" name="name" placeholder="my@email.com" data-validation-required-message="E-mail is required." data-validation-email-message="The e-mail provided appears to be invalid"/>
                       </label>
 
-                      <label for="formPhone" class="form-group">
-                        Phone
-                        <input type="text" id="formPhone" name="phone" placeholder="Your phone" />
+                      <label for="formMeal" class="form-group">
+                        Your meal preference<span class="help-block"></span>
+                        <div class="multiselect">
+                          <label>
+                            <input type="checkbox" class="radio" name="meal" value="chicken" />
+                            Honey-Brined Chicken
+                          </label>
+                          <label>
+                            <input type="checkbox" class="radio" name="meal" value="beef" />
+                            Short Ribs
+                          </label>
+                          <label>
+                            <input type="checkbox" class="radio" name="meal" value="veg" />
+                            Mushroom Ravioli
+                          </label>
+                        </div>
+                      </label>
+
+                      <label for="formTransport" class="form-group">
+                        Your transportation
+                        <div class="multiselect">
+                          <label>
+                            <input type="checkbox" class="radio" name="transport" value="shuttle" />
+                            I will be utilizing the provided shuttle from San Francisco
+                          </label>
+                          <label>
+                            <input type="checkbox" class="radio" name="transport" value="own" />
+                            I will coordinate my own transportation
+                          </label>
+                        </div>
                       </label>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                       <label for="formMessage" class="form-group">
-                        Your message
-                        <textarea name="message" id="formMessage" cols="10" rows="3" placeholder="Hi there!"></textarea>
+                        Your message<span class="help-block">(optional)</span>
+                        <textarea name="message" id="formMessage" placeholder="Hi there!"></textarea>
                       </label>
                     </div>
                     <div class="col-md-12">

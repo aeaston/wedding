@@ -871,9 +871,23 @@ span.lavan {
   text-align: center; }
 
 /** RSVP **/
+.rsvp {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px; }
+
 .form-group {
   display: block;
   font-weight: 400; }
+  .form-group .multiselect {
+    margin-top: 10px; }
+    .form-group .multiselect input {
+      display: inline-block;
+      width: auto; }
+    .form-group .multiselect label {
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px; }
 
 .form-group .text-danger ul,
 .form-group .text-danger li {
@@ -895,7 +909,7 @@ span.lavan {
   padding: 10px; }
 
 .form-group textarea {
-  min-height: 215px; }
+  min-height: 350px; }
 
 span.color-element {
   margin-right: 3px; }
@@ -903,7 +917,7 @@ span.color-element {
 label.form-group {
   font-family: "Pacifico", sans-serif;
   letter-spacing: 2px;
-  font-size: 14px; }
+  font-size: 18px; }
 
 .button_block {
   text-align: center; }
