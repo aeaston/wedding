@@ -281,24 +281,18 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault();
-      var name = $("#formName").val();
-      var email = $("#formEmail").val();
-      var meal = $("#formMeal").val();
-      var transport = $("#formTransport").val();
-      var message = $("#formMessage").val();
 
       $.ajax({
         url: "./php/rsvp.php",
         type: "POST",
-        data: {name: name, email: email, meal: meal, transport: transport, message: message},
+        data: $('#contact-form').serializeArray(),
         cache: false,
         success: function(resp) {
           displayMessage(resp);
-          $('#contactForm').trigger("reset");
+          $('#contact-form').trigger("reset");
         },
         error: function(resp) {
           displayMessage("There was an error and your RSVP was not recorded. Please try again.");
-          $('#contactForm').trigger("reset");
         },
       })
     }
