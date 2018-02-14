@@ -10,7 +10,7 @@
  4. COUNTDOWN
  5. SETTINGS
  6. SCROLL TOP
- 7. FORM VALIDATE
+ 7. RSVP
  8. IMAGE POPUP
  9. SCROLL ANIMATE
 */
@@ -263,10 +263,13 @@ $(document).on('click', '.scrollup',  function(){
   });
 });
 
-// 7. FORM VALIDATE
+// 7. RSVP
 //================================================================
 
 $(function() {
+  var displayMessage = function(message) {
+    $('#contact-form').prepend("<p class='text-center'>" + message + "</p><br>");
+  }
 
   $("input,textarea").jqBootstrapValidation(
   {
@@ -275,40 +278,39 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault();
-       // get values from FORM
-      var name    = $("#formName").val();
-      var email   = $("#formEmail").val();
-      var phone   = $("#formPhone").val();
+      var name = $("#formName").val();
+      var email = $("#formEmail").val();
+      var meal = $("#formMeal").val();
+      var transport = $("#formTransport").val();
       var message = $("#formMessage").val();
 
       $.ajax({
-        url: "./php/form.php",
+        url: "./php/rsvp.php",
         type: "POST",
-        data: {name: name, phone: phone, email: email, message: message},
+        data: {name: name, email: email, mail: mail, transport: transport, message: message},
         cache: false,
         success: function() {
-          $('#contact-form').prepend( "<p class='text-center'>Thank You! Your message has been sent.</p><br>" );
-          //clear all fields
+          displayMessage("Thank You! Your RSVP has been recorded.");
           $('#contactForm').trigger("reset");
         },
-       error: function() {
-        $('#contactForm').trigger("reset");
+        error: function() {
+          displayMessage("There was an error and your RSVP was not recorded. Please try again.");
+          $('#contactForm').trigger("reset");
         },
       })
-
     }
   });
 
-	$(".multiselect input:checkbox").on('click', function() {
-		var $box = $(this);
-		if ($box.is(":checked")) {
-			var group = "input:checkbox[name='" + $box.attr("name") + "']";
-			$(group).prop("checked", false);
-			$box.prop("checked", true);
-		} else {
-			$box.prop("checked", false);
-		}
-	});
+  $(".multiselect input:checkbox").on('click', function() {
+    var $box = $(this);
+    if ($box.is(":checked")) {
+      var group = "input:checkbox[name='" + $box.attr("name") + "']";
+      $(group).prop("checked", false);
+      $box.prop("checked", true);
+    } else {
+      $box.prop("checked", false);
+    }
+  });
 });
 
 // 8. IMAGE POPUP
