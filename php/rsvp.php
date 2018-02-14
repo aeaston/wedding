@@ -8,24 +8,24 @@ $meal      = trim(stripslashes(htmlspecialchars($_POST['meal'])));
 $transport = trim(stripslashes(htmlspecialchars($_POST['transport'])));
 $message   = trim(stripslashes(htmlspecialchars($_POST['message'])));
 
+$error = false;
 
 $guestlist = json_decode(file_get_contents("./../guestlist.json"), true);
 if (!in_array($name, $guestlist)) {
   print "We couldn't find ".$name." on the guestlist.";
-  return;
+  $error = true;
 }
-
-if (!$email) {
+elseif (!$email) {
   print "Please provide an email address.";
-  return;
+  $error = true;
 }
-if (!$meal) {
+elseif (!$meal) {
   print "Please provide a meal preference.";
-  return;
+  $error = true;
 }
-if (!$transport) {
+elseif (!$transport) {
   print "Please provide a transportation preference.";
-  return;
+  $error = true;
 }
 
 /* Email Template */
@@ -33,6 +33,7 @@ if (!$transport) {
 $to      = "placeholder@your.email";
 
 $subject = "Wedding RSVP for ".$name;
+if ($error) $subject = "Invalid ".$subject;
 
 $body   .= "Name: ".$name."<br>";
 $body   .= "Email: ".$email."<br>";
@@ -47,6 +48,7 @@ $headers .= "Content-Type: text/html; charset=UTF-8";
  
 mail($to, $subject, $body, $headers);
 
-print "Success! Your RSVP has been recorded.";
-
+if (!$error) {
+  print "Success! Your RSVP has been recorded.";
+}
 ?>
