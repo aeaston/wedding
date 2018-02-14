@@ -287,7 +287,7 @@ $(function() {
       $.ajax({
         url: "./php/rsvp.php",
         type: "POST",
-        data: {name: name, email: email, mail: mail, transport: transport, message: message},
+        data: {name: name, email: email, meal: meal, transport: transport, message: message},
         cache: false,
         success: function(resp) {
           debugger;

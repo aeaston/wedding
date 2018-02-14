@@ -18,10 +18,10 @@ if (!$email) {
   print json_encode("Please provide an email address.");
 }
 if (!$meal) {
-  print json_encode("Please provide an email address.");
+  print json_encode("Please provide a meal preference.");
 }
 if (!$transport) {
-  print json_encode("Please provide an email address.");
+  print json_encode("Please provide a transportation preference.");
 }
 
 /* Email Template */
