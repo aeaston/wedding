@@ -268,7 +268,7 @@ $(document).on('click', '.scrollup',  function(){
 
 $(function() {
   var displayMessage = function(message) {
-    $('#contact-form').prepend("<p id='rsvp-error' class='text-center'>" + message + "</p><br>");
+    $('#contact-form').append("<p id='rsvp-error' class='text-center'>" + message + "</p><br>");
     setTimeout(function() {
       $('#rsvp-error').remove();
     }, 5000);
