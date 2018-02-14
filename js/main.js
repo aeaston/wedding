@@ -289,7 +289,9 @@ $(function() {
         cache: false,
         success: function(resp) {
           displayMessage(resp);
-          $('#contact-form').trigger("reset");
+          if (resp.indexOf("Success") === 0 ) {
+            $('#contact-form').trigger("reset");
+          }
         },
         error: function(resp) {
           displayMessage("There was an error and your RSVP was not recorded. Please try again.");
