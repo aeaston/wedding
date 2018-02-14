@@ -289,11 +289,13 @@ $(function() {
         type: "POST",
         data: {name: name, email: email, mail: mail, transport: transport, message: message},
         cache: false,
-        success: function() {
+        success: function(resp) {
+          debugger;
           displayMessage("Thank You! Your RSVP has been recorded.");
           $('#contactForm').trigger("reset");
         },
-        error: function() {
+        error: function(resp) {
+          debugger;
           displayMessage("There was an error and your RSVP was not recorded. Please try again.");
           $('#contactForm').trigger("reset");
         },
