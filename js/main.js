@@ -268,7 +268,10 @@ $(document).on('click', '.scrollup',  function(){
 
 $(function() {
   var displayMessage = function(message) {
-    $('#contact-form').prepend("<p class='text-center'>" + message + "</p><br>");
+    $('#contact-form').prepend("<p id='rsvp-error' class='text-center'>" + message + "</p><br>");
+    setTimeout(function() {
+      $('#rsvp-error').remove();
+    }, 5000);
   }
 
   $("input,textarea").jqBootstrapValidation(
@@ -290,12 +293,10 @@ $(function() {
         data: {name: name, email: email, meal: meal, transport: transport, message: message},
         cache: false,
         success: function(resp) {
-          debugger;
-          displayMessage("Thank You! Your RSVP has been recorded.");
+          displayMessage(resp);
           $('#contactForm').trigger("reset");
         },
         error: function(resp) {
-          debugger;
           displayMessage("There was an error and your RSVP was not recorded. Please try again.");
           $('#contactForm').trigger("reset");
         },

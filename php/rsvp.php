@@ -10,18 +10,18 @@ $message   = trim(stripslashes(htmlspecialchars($_POST['message'])));
 
 $guestlist = json_decode(file_get_contents("./../guestlist.json"), true);
 if (!in_array($name, json_gl)) {
-  print json_encode("We couldn't find ".$name." on the guestlist.");
+  print "We couldn't find ".$name." on the guestlist.";
   return;
 }
 
 if (!$email) {
-  print json_encode("Please provide an email address.");
+  print "Please provide an email address.";
 }
 if (!$meal) {
-  print json_encode("Please provide a meal preference.");
+  print "Please provide a meal preference.";
 }
 if (!$transport) {
-  print json_encode("Please provide a transportation preference.");
+  print "Please provide a transportation preference.";
 }
 
 /* Email Template */
@@ -43,6 +43,6 @@ $headers .= "Content-Type: text/html; charset=UTF-8";
  
 mail($to, $subject, $body, $headers);
 
-print json_encode("Success! Your RSVP has been recorded.");
+print "Success! Your RSVP has been recorded.";
 
 ?>
