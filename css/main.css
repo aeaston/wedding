@@ -924,7 +924,7 @@ label.form-group {
 
 .form-button {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   float: left;
   width: 100%; }
 
@@ -1403,6 +1403,11 @@ footer.bottom li {
 
 .form-group-small {
   margin-bottom: 0; }
+
+#rsvp-error {
+  color: red;
+  margin: 0;
+  min-height: 20px; }
 
 table#wp-calendar {
   width: 100%; }

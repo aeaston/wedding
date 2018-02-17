@@ -268,10 +268,10 @@ $(document).on('click', '.scrollup',  function(){
 
 $(function() {
   var displayMessage = function(message) {
-    $('#contact-form').append("<p id='rsvp-error' class='text-center'>" + message + "</p><br>");
-    setTimeout(function() {
-      $('#rsvp-error').remove();
-    }, 5000);
+    var rsvpError = $('#rsvp-error');
+    rsvpError.hide();
+    rsvpError.text(message);
+    rsvpError.fadeIn();
   }
 
   $("input,textarea").jqBootstrapValidation(
