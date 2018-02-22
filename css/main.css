@@ -1404,6 +1404,15 @@ footer.bottom li {
 .form-group-small {
   margin-bottom: 0; }
 
+.registry-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  padding: 0 30px; }
+
+#zola-logo {
+  height: 300px;
+  width: 450px; }
+
 #rsvp-error {
   color: red;
   margin: 0;
