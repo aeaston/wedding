@@ -1449,6 +1449,27 @@ table#wp-calendar tfoot {
   border-radius: 3px;
   margin-bottom: 4px; }
 
+.tool-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; }
+
+.tool-tip .tool-tip-text {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 5px 0;
+  text-align: center;
+  width: 160px;
+  bottom: 30px;
+  left: 0px;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1; }
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible; }
+
 /** MEDIA MAX WIDTH 768px **/
 @media (max-width: 768px) {
   h1 {
