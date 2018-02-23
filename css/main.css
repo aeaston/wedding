@@ -136,8 +136,7 @@ p b {
 
 .page-content img {
   width: 100%;
-  height: 100%;
-  margin: 10px; }
+  height: 100%; }
 
 .padded-top {
   padding-top: 30px; }
@@ -522,7 +521,8 @@ button.large-button:hover, a.large-button:hover, input.large-button[type="submit
 
 .img-item img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 10px; }
 
 .hovereffect {
   width: 100%;
