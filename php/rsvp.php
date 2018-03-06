@@ -30,7 +30,7 @@ elseif (!$transport) {
 
 /* Email Template */
 
-$to      = "placeholder@your.email";
+$to_emails = array("placeholder@your.email");
 
 $subject = "Wedding RSVP for ".$name;
 if ($error) $subject = "Invalid ".$subject;
@@ -45,8 +45,10 @@ $headers  = "From: ".$email."\r\n";
 $headers .= "Reply-To: ".$email."\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8";
- 
-mail($to, $subject, $body, $headers);
+
+foreach ($to_emails as $to) {
+  mail($to, $subject, $body, $headers);
+}
 
 if (!$error) {
   print "Success! Your RSVP has been recorded.";
